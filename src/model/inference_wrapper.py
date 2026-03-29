@@ -151,6 +151,8 @@ class InferenceWrapper(Module):
                 "raw_lines": signals.cpu(),
                 "canonical_lines": layout.get("canonical_lines", None),
                 "lines": layout.get("lines", None),
+                "detected_points": layout.get("detected_points", []),
+                "rows_in_layout": layout.get("rows_in_layout", 0),
                 "layout_matching_cost": layout_cost,
                 "layout_is_flipped": layout_is_flipped,
             },

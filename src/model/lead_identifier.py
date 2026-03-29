@@ -490,6 +490,7 @@ class LeadIdentifier:
         return {
             "rows_in_layout": rows_in_layout,
             "n_detected": len(detected),
+            "detected_points": detected,
             **match,
             "canonical_lines": canonical_lines,
             "lines": lines,
